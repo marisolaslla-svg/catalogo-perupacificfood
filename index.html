@@ -383,11 +383,7 @@ const ICONOS = {
   "pulpas de frutas": "img/pulpas.svg"
 };
 const CATS_BASE = ["Pescados y Mariscos","Carnes y Parrillas","Casi Listos y Piqueos","Embutidos y Quesos","Salsas, Aceites y Condimentos","Vinos, Cervezas y Agua","Pulpas de Frutas"];
-const icono = c => {
-  const src = ICONOS[norm(c)];
-  return src
-    ? `<img src="${src}" class="cat-icon" alt="" aria-hidden="true">`
-    : "";
+const icono = c => {const src = ICONOS[norm(c)];return src? `<img src="${src}" class="cat-icon" alt="" aria-hidden="true">` : "";
 };
 const CART_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2.5 3.5h2.6l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.6a1.6 1.6 0 0 0 1.6-1.2l1.6-7.3H6"/></svg>';
 
